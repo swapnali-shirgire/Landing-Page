@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    font-size: 20px;
+    color: white;
+
+}
+ul{
+    display: flex;
+    gap: 90px;
+    margin: 20px;
+    list-style: none;
+    font-size: 30px;
+    color: white;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.944);
+}
+.container{
+    display: flex;
+}
+.text{
+    flex: 1;
+    margin: 100px;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    animation: slideUp 3s ease-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px); /* start below */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* final position */
+    opacity: 1;
+  }
+}
+button{
+    width: 25%;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.219);
+    font-size: 20px;
+}
+.img{
+    flex: 1;
+}
+.img img{
+    height: 40em;
+}
+
+
+.features {
+    text-align: center;
+    color: white;
+    margin: 40px 20px;
+}
+
+.features h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.feature-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: #111;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin: 10px;
+    }
+
+    ul {
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    .text {
+        margin: 30px 10px;
+        font-size: 24px;
+    }
+
+    button {
+        width: 80%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .img img {
+        height: auto;
+        width: 90%;
+        margin-top: 20px;
+    }
+}
