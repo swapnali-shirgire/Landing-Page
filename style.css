@@ -8,6 +8,7 @@
     margin: 40px;
     font-size: 20px;
     color: white;
+    cursor: pointer;
 
 }
 ul{
@@ -51,6 +52,7 @@ button{
     color: white;
     background-color: rgba(0, 0, 0, 0.219);
     font-size: 20px;
+    cursor: pointer;
 }
 .img{
     flex: 1;
